@@ -1,0 +1,39 @@
+﻿@using AdoNetYazılım2.Models
+@model List<araclar>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AraclarıYukle</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Araç Plakası</th>
+                <th>Araç Şase No</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var arac in Model)
+            {
+                <tr>
+                    <td>@arac.plaka</td>
+                    <td>@arac.saseno</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+   
+</body>
+</html>
