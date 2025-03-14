@@ -11,6 +11,7 @@ namespace AdoNetYazılım2.Controllers
     {
         // veritabanı referansı her yerden bu arkadaşı kullanabilirsiniz.
         OtoServisDBEntities db = new OtoServisDBEntities();
+        
 
         [HttpGet]
         public ActionResult AraclarıYukle()
